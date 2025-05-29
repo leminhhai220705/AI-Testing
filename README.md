@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Agency Marketing Website
+
+A modern, responsive marketing agency website built with Next.js, TailwindCSS, and Framer Motion.
+
+## Features
+
+- Responsive design that works on all devices
+- Modern UI with smooth animations
+- Dark mode support
+- Optimized performance
+- SEO friendly
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/agency-marketing.git
+cd agency-marketing
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment to GitHub Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Step 1: Update package.json
 
-## Learn More
+Make sure to update the `homepage` field in `package.json` with your GitHub username:
 
-To learn more about Next.js, take a look at the following resources:
+```json
+"homepage": "https://YOUR_GITHUB_USERNAME.github.io/agency-marketing",
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Step 2: Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Run the deploy command:
+```bash
+npm run deploy
+```
 
-## Deploy on Vercel
+This will build the application and push it to the `gh-pages` branch of your repository.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Step 3: Configure GitHub Pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Go to your repository on GitHub
+2. Navigate to Settings > Pages
+3. Set the source to the `gh-pages` branch
+4. Save your changes
+
+Your site should now be available at `https://YOUR_GITHUB_USERNAME.github.io/agency-marketing`
+
+## Manual Deployment
+
+If you prefer to deploy manually:
+
+1. Build the project
+```bash
+npm run build
+```
+
+2. Deploy the `out` directory to your hosting provider of choice.
+
+## License
+
+MIT
